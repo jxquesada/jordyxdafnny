@@ -1,6 +1,6 @@
 body {
   font-family: 'Georgia', serif;
-  background: url("fondo.jpeg") no-repeat center center fixed;
+  background: #ddd url("fondo.jpeg") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
