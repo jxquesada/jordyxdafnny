@@ -1,11 +1,13 @@
 body {
   font-family: 'Georgia', serif;
-  background: #fdfcfb;
+  background: url("fondo.jpeg") no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
   color: #333;
   text-align: center;
 }
+
 
 .container, .invitation {
   max-width: 600px;
