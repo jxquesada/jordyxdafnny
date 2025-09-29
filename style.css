@@ -1,0 +1,68 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #fdfcfb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+.container, .invitation {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #a87c5f;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #555;
+}
+
+.guest-list {
+  list-style: none;
+  padding: 0;
+}
+
+.guest-list li {
+  margin: 10px 0;
+}
+
+.guest-list a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #a87c5f;
+  transition: 0.3s;
+}
+
+.guest-list a:hover {
+  color: #333;
+}
+
+.countdown {
+  font-size: 1.3em;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #a87c5f;
+}
+
+.btn {
+  display: inline-block;
+  background: #a87c5f;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #333;
+}

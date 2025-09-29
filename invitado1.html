@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación - Juan Pérez</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Cuenta regresiva
+    const fechaBoda = new Date("2025-12-20T15:00:00").getTime();
+    setInterval(() => {
+      const ahora = new Date().getTime();
+      const diff = fechaBoda - ahora;
+      if (diff <= 0) return document.getElementById("countdown").innerHTML = "¡Hoy es el gran día!";
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const segs = Math.floor((diff % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = `${dias}d ${horas}h ${mins}m ${segs}s`;
+    }, 1000);
+  </script>
+</head>
+<body>
+  <div class="invitation">
+    <h1>¡Estás invitado a nuestra boda!</h1>
+    <h2>Juan Pérez</h2>
+    <p>Con mucho cariño queremos que nos acompañes en este día tan especial.</p>
+    <p><strong>20 de Diciembre 2025 - 3:00 PM</strong></p>
+    <p>Salón Real, San José, Costa Rica</p>
+
+    <div id="countdown" class="countdown"></div>
+
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18...tu_link..." 
+      width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+
+    <a class="btn" href="https://tally.so/r/tu-formulario" target="_blank">Confirmar asistencia</a>
+  </div>
+</body>
+</html>
