@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Georgia', serif;
-  background: #ddd url("fondo.jpg") no-repeat center center fixed;
+  background: #ddd url("fondo.png") no-repeat center center fixed;
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0;
@@ -45,9 +45,16 @@ body {
   margin-right: auto;
 }
 
+p {
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
 h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3.5em;
+  font-family: "libertinus serif display", serif;
+  font-size: 2.5em;
+  font-weight: 300; /* negrita */
   margin-bottom: 10px;
   color: #a87c5f;
 }
@@ -56,6 +63,14 @@ h2 {
   font-size: 1.5em;
   margin: 15px 0;
   color: #555;
+}
+
+h3 {
+  font-family: "great vibes", cursive;
+  font-size: 60px;
+  font-weight: 300; /* negrita */
+  margin: 15px 0;
+  color: #a87c5f;
 }
 
 .guest-list {
@@ -79,8 +94,8 @@ h2 {
 }
 
 .countdown {
-  font-family: 'Great Vibes', cursive;
-  font-size: 5em;
+  font-family: "libertinus serif display", serif;
+  font-size: 3em;
   margin: 20px 0;
   color: #a87c5f;
 }
