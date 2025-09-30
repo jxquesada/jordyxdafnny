@@ -14,7 +14,7 @@ body {
 
 
 .container {
-  max-width: 600px;
+  max-width: 400px;
   margin: auto;
   padding: 20px;
   min-height: 100vh;
@@ -28,7 +28,7 @@ body {
 }
 
 .center-fade {
-  height: 65vh;         /* ventana completa */
+  height: 55vh;         /* ventana completa */
   overflow-y: auto;      /* scroll */
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
   mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
@@ -46,14 +46,14 @@ body {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.6;
   margin: 10px 0;
 }
 
 h1 {
   font-family: "libertinus serif display", serif;
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 300; /* negrita */
   margin-bottom: 10px;
   color: #a87c5f;
@@ -95,7 +95,7 @@ h3 {
 
 .countdown {
   font-family: "libertinus serif display", serif;
-  font-size: 3em;
+  font-size: 2em;
   margin: 20px 0;
   color: #a87c5f;
 }
