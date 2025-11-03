@@ -48,6 +48,19 @@ body {
   mask-size: 100% 100%;
 }
 
+/* Filas de imágenes horizontales dentro de .container */
+.image-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* permite que se envuelvan en pantallas estrechas */
+}
+.image-row img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
 
 .container iframe {
   display: block;
