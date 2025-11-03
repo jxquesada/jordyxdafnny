@@ -52,8 +52,8 @@ body {
 .image-row {
   display: flex;
   gap: 12px;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;*/
+  /*align-items: center;*/
   flex-wrap: wrap; /* permite que se envuelvan en pantallas estrechas */
 }
 .image-row img {
