@@ -54,7 +54,7 @@ body {
   gap: 12px;
   /*justify-content: center;*/
   /*align-items: center;*/
-  flex-wrap: wrap; /* permite que se envuelvan en pantallas estrechas */
+  flex-wrap: nowrap; /* permite que se envuelvan en pantallas estrechas */
 }
 .image-row img {
   max-width: 200px;

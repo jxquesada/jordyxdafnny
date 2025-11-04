@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manufacturing+Consent&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Great+Vibes&family=Libertinus+Serif+Display&family=Manufacturing+Consent&family=Workbench&display=swap" rel="stylesheet">
+  <script>
+    // Cuenta regresiva
+    const fechaBoda = new Date("2026-01-01T11:00:00").getTime();
+    setInterval(() => {
+      const ahora = new Date().getTime();
+      const diff = fechaBoda - ahora;
+      if (diff <= 0) return document.getElementById("countdown").innerHTML = "¡Hoy es el gran día!";
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const segs = Math.floor((diff % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = `${dias} días ${horas} horas ${mins}m ${segs}s`;
+    }, 1000);
+  </script>
+</head>
+<body>
+  <div class="top-padding"></div>
+  <img src="date.png" alt="Imagen de la boda" style="max-width: 300px;">
+  <div id="countdown" class="countdown"></div>
+  
+  <div class="center-fade">
+    
+    <div class="container">
+      <h1>...............................................</h1>
+      
+      <!-- Cambia nombre aquí -->
+      <h3>Aura Retana Quesada</h3>
+      <h1>¡Estás invitada a nuestra boda!</h1>
+      <p>Porque eres parte de nuestras vidas, deseamos que compartas con nosotros este día tan especial.</p>
+      <p><strong>Confirma tu asistencia al final de esta la invitación</strong></p>
+      <img src="separador.png" alt="separador" style="max-width: 380px;">
+
+      <h1>Tu código de vestimenta</h1>
+      <!-- Cambia color codigo vestimenta -->
+      <img src="vlm.png" alt="Codigo de vestimenta" style="max-width: 200px;">
+      <!-- Cambia color de vestimenta aqui-->
+      <p>Como dama de honor, tu color principal es el lavanda.</p>
+      <img src="separador.png" alt="separador" style="max-width: 380px;">
+
+      <h1>Fotógrafo</h1>
+      <img src="caman.png" alt="fotografo" style="max-width: 200px;">
+      <p>Durante el evento habrá un fotógrafo disponible, a quien podrá solicitarle las fotos que desee.</p>
+      <p>Agradecemos <strong>no publicar en redes sociales</strong> ningún contenido de la boda sin el consentimiento de los novios.</p>
+      <img src="separador.png" alt="separador" style="max-width: 380px;">
+
+      <h1>Muestra de Cariño</h1>
+      <img src="chest.png" alt="Codigo de vestimenta" style="max-width: 200px;">
+      <p>Si desean brindarnos una muestra de cariño, habrá un cofre para colocar sobres con efectivo en el lugar de la celebración. Agradecemos que eviten los regalos materiales. 💕</p>
+      <img src="separador.png" alt="separador" style="max-width: 380px;">
+      
+      
+
+      <h1>Lugar de la boda (11:00 a. m. - 12:00 p. m.)</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15719.438649456275!2d-84.04382606077002!3d9.945632443167113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e40c397567e1%3A0x91910a13adb1b5b6!2sParroquia%20San%20Ram%C3%B3n%20Nonato!5e0!3m2!1ses-419!2scr!4v1759184645110!5m2!1ses-419!2scr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <img src="separador.png" alt="separador" style="max-width: 380px;">
+
+
+      <h1>Lugar de la celebración (1:00 p. m. - 6:00 p. m.)</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18336.531392573732!2d-84.157437319896!3d10.019829914334549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fa7d397ad2b5%3A0xe4be421f93580201!2sSal%C3%B3n%20De%20Eventos%20La%20Hacienda!5e0!3m2!1ses-419!2scr!4v1759184749363!5m2!1ses-419!2scr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <h1>...............................................</h1>
+
+      <!-- Cambia el enlace aquí -->
+      <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQ15TChUOUw0V1hYNFJGMzE2MDRBUk4wTlkyM1Y1OS4u&r2b11015d4d5145728c970459c747c1f6=%22Aura%20Retana%20Quesada%22" target="_blank">Confirmar asistencia</a>
+      <p><strong>Fecha limite de confirmación 01 Diciembre 2025</strong></p>
+      <div class="top-padding"></div>
+    </div>
+  </div>
+</body>
+</html>
